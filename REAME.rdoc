@@ -1,0 +1,12 @@
+= Email Success Notifier
+
+Send you an email ... when build is a success
+
+== Configuration
+
+  Project.configure do |project|
+    # ...
+    project.email_success_notifier.emails = ['john@doe.com', 'jane@doe.com']
+    project.email_success_notifier.from = "cruisecontrol@doe.com"
+  end
+
